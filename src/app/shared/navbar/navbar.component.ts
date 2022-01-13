@@ -84,8 +84,8 @@ export class NavbarComponent implements OnInit {
         }
     }
 
-    OktaLogout(){
-        this.OktaAuthClient.OktaSDKAuthClient.signOut();
+    async OktaLogout(){
+        await this.OktaAuthClient.OktaSDKAuthClient.signOut();
         }
 }
 
